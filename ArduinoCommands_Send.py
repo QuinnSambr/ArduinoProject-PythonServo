@@ -3,13 +3,22 @@
 #Arduino integration with Python
 
 import pyautogui, sys
-from tkinter import * 
+from tkinter import *
+import serial
+import time
 
 #Function tracks X,Y cords in real time within the generated window
+ser=serial.Serial('COM3',baudrate=57600, timeout=1)
+
+def writePort(arduino_values):
+    ser.write(arduino_values.encode())
+    time.sleep(0.0125)
+
 def cords(events):
     x, y = pyautogui.position()
-    positionStr = 'X: ' + str(x).rjust(4) + ' Y: ' + str(y).rjust(4)
-    label['text']=positionStr
+    ard_val="X{xaxis}".format(xaxis= 180- x / float((600/170)))
+    label['text']=ard_val
+    writePort(ard_val)
     
 #Main function wich generates a window of size 600x600
 w=Tk()
