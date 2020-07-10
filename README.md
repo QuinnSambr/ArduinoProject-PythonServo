@@ -8,5 +8,4 @@ ArduinoCommands_Send.py is a python script that generates a window and tracks th
 Problems:
 Arudino Baudrate needs to be at a higher frequency to interprelate the code being parsed faster.
 
-![til](https://gifs.com/gif/arduinoproject-r8xmkk)
-
+<iframe src='//gifs.com/embed/arduinoproject-r8xmkk' frameborder='0' scrolling='no' width='404px' height='718px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
