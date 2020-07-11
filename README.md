@@ -6,7 +6,7 @@ Main.cpp is a C++ script that interprelates the data being sent to the arduino f
 ArduinoCommands_Send.py is a python script that generates a window and tracks the x,y cords and does a mathematical function that downscales it to degrees of rotation and sends this via serial port to the arduino
 
 Problems:
-Arudino Baudrate needs to be at a higher frequency to interprelate the code being parsed faster.
+Arudino Baudrate needs to be at a higher frequency to interpret the code being parsed faster.
 
 ![pt1](https://media.giphy.com/media/TH6QNbdoiki2etLn1n/giphy.gif)
 ![pt2](https://media.giphy.com/media/low7T3pMC23PAQARV6/giphy.gif)
