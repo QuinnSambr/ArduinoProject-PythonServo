@@ -8,7 +8,7 @@ String serialData;
 void setup() {
 
   serFirst.attach(11);
-  Serial.begin(9600);
+  Serial.begin(57600);
   Serial.setTimeout(10);
 }
 
